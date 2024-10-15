@@ -31,3 +31,18 @@ Or build and run with maven locally:
 
  Or just do a local docker build: `docker build -t imagename .`
  Then you can run the container locally.
+
+
+## Native Build
+
+ ```shell
+clean
+mvn compile -f "/workspaces/k8s-demo-app/pom.xml" -P native 
+mvn native:compile-no-fork -f "/workspaces/k8s-demo-app/pom.xml" -P native
+ ```
+
+### start native build
+```shell
+./target/k8s-demo-app
+./target/k8s-demo-app --spring.profiles.active=red
+```
