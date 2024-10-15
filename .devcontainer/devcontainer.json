@@ -5,26 +5,24 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
-      		"ghcr.io/devcontainers/features/java:1": {
-			    // version is installed via sdkman 
-          // see https://sdkman.io/jdks#graalce and https://www.graalvm.org/downloads/ for version
-          "version": "21.0.3-graal-ce",
-			    "installMaven": "true",
-			    "mavenVersion": "3.8.6",
-			    "installGradle": "false"
-		}
+    // version is installed via sdkman 
+    // see https://sdkman.io/jdks#graalce and https://www.graalvm.org/downloads/ for version
+    "version": "21.0.3-graal-ce",
+    "installMaven": "true",
+    "mavenVersion": "3.8.6",
+    "installGradle": "false"
     }
   },
-  	// Configure tool-specific properties.
-	"customizations": {
+  // Configure tool-specific properties.
+  "customizations": {
     // Configure properties specific to VS Code.
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"streetsidesoftware.code-spell-checker"
-			]
-		}
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
   }
   // Use 'postCreateCommand' to run commands after the container is created.
-	, "postCreateCommand": "java -version"
+, "postCreateCommand": "java -version"
 }
