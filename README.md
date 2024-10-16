@@ -36,9 +36,10 @@ Or build and run with maven locally:
 ## Native Build
 
  ```shell
-clean
-mvn compile -f "/workspaces/k8s-demo-app/pom.xml" -P native 
-mvn native:compile-no-fork -f "/workspaces/k8s-demo-app/pom.xml" -P native
+mvn clean
+# 'package' contains step 'process-aot' which is needed for native:compile
+mvn package -Pnative 
+mvn native:compile
  ```
 
 ### start native build
