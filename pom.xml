@@ -75,9 +75,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>
-						de.viadee.k8s.testapp.K8sDemoApplication
-					</mainClass>
+
 				</configuration>
                 <executions>
                     <execution>
